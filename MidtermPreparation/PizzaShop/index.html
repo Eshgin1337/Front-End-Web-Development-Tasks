@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pizza Shop</title>
+</head>
+<body>
+    <form name="orders">
+        <h1>Order Pizza</h1>
+        <label><b>Type of pizza: </b></label> <br> <br>
+
+        <select name="type" id="type">
+            <option value="5.5">Tropicana</option>
+            <option value="5.25">Margarita</option>
+            <option value="5.0">Vegeterian</option>
+        </select> <br> <br>
+
+        <label><b>Size of the pizza: </b></label> <br> <br>
+
+        <input type="radio" name="size" value="1" id="rad1">
+        <label for="rad1">small</label>
+        <input type="radio" name="size" value="1.5" id="rad2">
+        <label for="rad2">medium</label>
+        <input type="radio" name="size" value="2" id="rad3">
+        <label for="rad3">large</label> <br> <br>
+
+        <button>Add order</button> <br> <br>
+
+        <table id="tb">
+            <thead>
+                <th>Pizza</th><th>Size</th><th></th>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+        <h2 id="total_cost"></h2>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>

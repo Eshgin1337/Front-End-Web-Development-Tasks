@@ -1,0 +1,8 @@
+form{ font-family: Century Gothic, sans-serif; width: 300px; margin: 0 auto; border: 1px dotted silver; padding: 50px; margin-top: 30px;}
+		h1{ border-bottom: 1px solid silver }
+		table td{ width: 33%; border-bottom: 1px solid silver; padding: 7px}
+		table, tr, td{ border-collapse: collapse;}
+		mark{ padding: 3px 8px; background-color: red; color: white; cursor: pointer;}
+		td:last-child{ text-align: right; }
+		th{ text-align: left; padding: 7px; }
+		thead{ border-bottom: 4px solid silver; }

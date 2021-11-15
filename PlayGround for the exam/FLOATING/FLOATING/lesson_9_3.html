@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Floating</title>
+	<style type="text/css">
+
+		body{ margin: 0; }
+		.menu, .content, .head, .foot { padding: 30px; box-sizing: border-box; }
+		.menu{
+			width: 30%;
+			height: 300px;
+			background-color: orange;
+			float: left;
+		}
+		.content{
+			width: 70%;
+			height: 300px;
+			background-color: greenyellow;
+			float: left;
+		}
+		.head, .foot{
+			background-color: silver;
+			height: 150px;
+		}
+		.container::after{ clear: left; display: table; content: ""; }
+		
+	</style>
+</head>
+<body>
+	<!-- CSS Floating -->
+	<div class="head">
+		<h1>HEADING</h1>
+	</div>
+
+	<div class="container">
+		<div class="menu">
+			<ul>
+				<li>ABOUT</li>
+				<li>PORTFOLIO</li>
+				<li>CONTACT</li>
+			</ul>
+		</div>
+
+		<div class="content">
+			What is Lorem Ipsum?
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+			the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets 
+		</div>
+	</div>
+
+	<div class="foot">
+		<p>Copyright (c) 2019, Mycompany</p>
+	</div>
+
+</body>
+</html>

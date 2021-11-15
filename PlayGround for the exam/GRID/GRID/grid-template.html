@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GRID ITEM in CSS 3.0</title>
+<style>
+  *{ 
+    margin: 0; 
+    font-size: 33px; 
+    font-family: Century Gothic, sans-serif;
+    font-weight: bold;
+  }
+  .item1 { grid-area: head; background-color: turquoise;}
+  .item2 { grid-area: menu; background-color: gold;}
+  .item3 { grid-area: main; background-color: olive;}
+  .item4 { grid-area: aside; background-color: yellowgreen;}
+  .item5 { grid-area: foot; background-color: turquoise;}
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'head  head  head  head  head   head'
+      'menu  main  main  main  aside  aside'
+      'menu  foot  foot  foot  foot   foot';
+    grid-gap: 0px;
+    padding: 10px;
+  }
+
+  .grid-container > div {
+    text-align: center;
+    padding: 30px 0;
+    min-height: 25vh;
+  }
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="item1">HEADER</div>
+    <div class="item2">MENU</div>
+    <div class="item3">MAIN</div>  
+    <div class="item4">ASIDE</div>
+    <div class="item5">FOOTER</div>
+</div>
+
+</body>
+</html>

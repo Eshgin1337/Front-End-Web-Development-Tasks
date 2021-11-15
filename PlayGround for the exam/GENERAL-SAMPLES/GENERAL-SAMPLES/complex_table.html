@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		table,tr,td{
+			border:2px solid blue;
+			border-collapse: collapse;
+			padding: 30px;
+		}
+		/*	
+		tr:nth-child(odd){
+			background-color: yellow;
+		}
+		tr:nth-child(even){
+			background-color: green;
+		}
+		*/
+		col:nth-child(1){
+			background-color: yellow;
+		}
+		col:nth-child(2){
+			background-color: lime;
+		}
+		col:nth-child(3){
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<thead>
+			<colgroup>
+				<col span="3"></col>
+				<col></col>
+				<col span="2"></col>
+
+			</colgroup>
+		</thead>
+		<tr>
+			<td rowspan="2" colspan="2">A</td>
+			<td colspan="2">B</td>
+			<td colspan="2">C</td>
+		</tr>
+		<tr>
+			<td colspan="2">L</td>
+			<td colspan="2">M</td>
+		</tr>
+		<tr>
+			<td rowspan="2" colspan="2">D</td>
+			<td>E</td>
+			<td>F</td>
+			<td rowspan="2" colspan="2">G</td>
+		</tr>
+		<tr>
+			<td>L</td>
+			<td>M</td>
+		</tr>
+		<tr>
+			<td rowspan="2" colspan="2" >O</td>
+			<td rowspan="2">B</td>
+			<td rowspan="2">A</td>
+			<td>E</td>
+			<td>F</td>
+		</tr>
+		<tr>
+			<td>K</td>
+			<td>M</td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  *{ font-family: Century Gothic, sans-serif; }
+  h1{ text-align: center; font-size: 44px; }
+  h2{ text-align: center }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 200px auto;
+    grid-gap: 10px;
+    background-color: aqua;
+    padding: 10px;
+  }
+
+  .grid-container > div {
+    background-color: teal;
+    text-align: left;
+    font-size: 18px;
+    color: white;
+    padding: 20px;
+    min-height: 15vh;
+  }
+
+  .vertical-align{
+    display: grid;
+    align-content: center;
+  }
+
+  @media(max-width: 1192px){
+    .grid-container {
+      grid-template-columns: auto auto;
+      grid-template-rows: 200px 300px auto;
+    }
+  }
+  @media(max-width: 768px){
+    .grid-container {
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+    }
+  }
+</style>
+</head>
+<body>
+
+<h1>Grid Container : rows</h1>
+
+<div class="grid-container">
+    <div class="vertical-align"><h2>N1</h2></div>
+    <div class="vertical-align"><h2>N2</h2></div>
+    <div class="vertical-align"><h2>N3</h2></div>  
+    <div class="vertical-align"><h2>N4</h2></div>
+    <div>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p><p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+      <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</p>
+    </div>
+    <div>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p></div>
+    <div>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+      <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</p>
+    </div>
+    <div>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+      <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</p>
+      <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</p>
+    </div>
+</div>
+
+</body>
+</html>

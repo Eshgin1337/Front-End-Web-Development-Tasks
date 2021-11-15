@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		input{
+			padding: 8px;
+			border: 1px solid green;
+		}
+		input[type="number"]{
+			background-color: yellow;
+		}
+		input:hover{
+			background-color: turquoise;
+		}
+		input[type="number"]:hover{
+			border: 4px solid red;
+		}
+	</style>
+</head>
+<body>
+	<!--
+		Lesson 7:
+		- FORM elements
+		- CSS Selectors
+	-->
+	<h1>FORM elements</h1>
+	<form action="edit.php" method="POST">
+		<!-- <label>Type your name:</label> -->
+		<input type="text" name="name" placeholder="your name"><br><br>
+		<input type="text" name="surname" placeholder="surname"><br><br>
+		<input type="number" name="age" placeholder="my age">
+		<br><br>
+		<input type="password" name="password" placeholder="password"><br><br>
+		<select name="products">
+			<option value="Tea">Tea</option>
+			<option value="Coffee">Coffee</option>
+			<option value="Lemonade">Lemonade</option>
+		</select>
+		<br><br>
+		<input type="radio" name="sex" value="male">Male
+		<input type="radio" name="sex" value="female">Female
+		<br><br>
+		<label>Select your status</label>
+		<input type="checkbox" name="status" value="admin">admin
+		<input type="checkbox" name="status" value="user">user
+		<input type="checkbox" name="status" value="moderator">moderator
+		<input type="checkbox" name="status" value="teacher">teacher
+		<br><br>
+		<label>Info:</label>
+		<textarea name="info" cols="15" rows="5"></textarea>
+		<br><br>
+		<input type="color" name="color">
+		<input type="date" name="date">
+		<input type="time" name="time">
+		<br><br>
+		<button>SEND</button>
+	</form>
+
+</body>
+</html>

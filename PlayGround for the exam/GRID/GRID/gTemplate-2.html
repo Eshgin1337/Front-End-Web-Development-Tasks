@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  body {
+    font-family: Century-Gothic, sans-serif;
+    font-size: 22px;
+  }
+
+  /* Style the header */
+  .header {
+    grid-area: header;
+    background-color: #f1f1f1;
+    padding: 50px;
+    text-align: center;
+    font-size: 35px;
+  }
+  /* menu */
+  .menu { grid-area: menu; }
+  /* left column */
+  .left { grid-area: left; }
+  /* middle column */
+  .middle { grid-area: middle; }
+  /* right column */
+  .right { grid-area: right; }
+   /* bottom-1 column */
+  .bot-1{ grid-area: bot-1; }
+   /* bottom-2 column */
+  .bot-2{ grid-area: bot-2; }
+  /* footer */
+  .footer {
+    grid-area: footer;
+    background-color: #ddd; 
+    padding: 10px;
+    text-align: center;
+    min-height: 100px;
+  }
+
+  /* The grid container */
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+      'header header header header'
+      'menu   menu   menu   menu' 
+      'left   middle middle right'
+      'bot-1  bot-1  bot-2  bot-2' 
+      'footer footer footer footer';
+  } 
+
+  .left, .middle, .right, .bot-1, .bot-2 {
+    padding: 10px;
+    height: 200px; /* Should be removed. Only for demonstration */
+  }
+
+  .menu{ 
+    padding: 10px;
+    height: 70px;
+    background-color: #ddd; 
+  }
+
+  @media (max-width: 1099px) {
+    .grid-container  {
+    grid-template-areas: 
+      'header header header header'
+      'menu   menu   menu   menu' 
+      'left   left   right  right'
+      'middle middle middle middle'
+      'bot-1  bot-1  bot-2  bot-2' 
+      'footer footer footer footer';
+    }
+  }
+
+  @media (max-width: 600px) {
+    .grid-container  {
+      grid-template-areas: 
+        'header header header header'
+        'menu   menu   menu   menu' 
+        'left   left   left   left'
+        'middle middle middle middle'
+        'right  right  right  right'
+        'bot-1  bot-1  bot-1  bot-1'
+        'bot-2  bot-2  bot-2  bot-2' 
+        'footer footer footer footer';
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="header">
+      <h2>Header</h2>
+    </div>
+
+    <div class="menu">Menu</div>
+    
+    <div class="left" style="background-color:#aaa;">Column #1</div>
+    <div class="middle" style="background-color:#bbb;">Column #2</div>  
+    <div class="right" style="background-color:#ccc;">Column #3</div>
+
+    <div class="bot-1" style="background-color:#ccc;">Bottom #1</div>
+    <div class="bot-2" style="background-color:#aaa;">Bottom #2</div>
+    
+    <div class="footer">
+      <p>Footer</p>
+    </div>
+  </div>
+</body>
+</html>

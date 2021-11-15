@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		*{
+			font-size: 33px;
+		}
+		ul{
+			list-style-type: none;
+		}
+		li{
+			color: white;
+		}
+		.bir{ border-left: 8px solid red;}
+		.iki{ border-left: 6px solid green;}
+		.uc{ border-left: 4px solid purple;}
+		.dord{ border-left: 2px solid orange;}
+		#bg1{background-color: red;}
+		#bg2{background-color: green;}
+		#bg3{background-color: purple;}
+		#bg4{background-color: orange;}
+		span{
+			padding: 0px 10px;
+		}
+	</style>
+</head>
+<body>
+	<!-- nested list -->
+	<ul>
+		<li class="bir"><span id="bg1">A:</span>
+			<ul>
+				<li class="iki"><span id="bg2">B</span></li>
+				<li class="iki"><span id="bg2">C</span></li>
+				<li class="iki"><span id="bg2">D</span>
+					<ul>
+						<li class="uc"><span id="bg3">E:
+							<ul>
+								<li class="dord"><span id="bg4">H</span></li>
+								<li class="dord"><span id="bg4">I</span></li>
+								<li class="dord"><span id="bg4">J</span></li>
+							</ul>
+						</li>
+						<li class="uc"><span id="bg3">F</span></li>
+						<li class="uc"><span id="bg3">G</span></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>

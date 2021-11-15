@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>Layout Positioning</title>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada|Raleway:200,300i,400,500,600,700" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+		*{
+			font-size: 20px;
+		}
+		h1{
+			font-size: 46px;
+		}
+		#container{
+			float: left;
+			width: 27%;
+			margin: 1%;
+			padding: 1%;
+			background-color: #eee;
+			border: 1px solid black;
+		}
+		#container div{
+			width: 100px;
+			border: 1px solid black;
+			margin: 5px;
+		}
+		.inside1{
+			display: block;
+			background-color: lime;
+		}
+		.inside2{
+			display: inline;
+			background-color: turquoise;
+		}
+		.inside3{
+			display: inline-block;
+			background-color: orange;
+		}
+		</style>
+	</head>
+	<body>
+		<h1>Display properties in CSS</h1>
+
+		<div id="container">
+			<div class="inside1">display: block</div>
+			<div class="inside1">display: block</div>
+			<div class="inside1">display: block</div>
+		</div>
+		<div id="container">
+			<div class="inside2">display: inline</div>
+			<div class="inside2">display: inline</div>
+			<div class="inside2">display: inline</div>
+			<div class="inside2">display: inline</div>
+			<div class="inside2">display: inline</div>
+			<div class="inside2">display: inline</div></div>
+		<div id="container">
+			<div class="inside3">display: inline-block</div>
+			<div class="inside3">display: inline-block</div>
+			<div class="inside3">display: inline-block</div>
+		</div>
+	</body>
+</html>
